@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# cd ../frontend
+# docker run --rm -it -u "$(id -u):$(id -g)" -v $(pwd):/app -w /app node:14 npm install
+# docker run --rm -it -u "$(id -u):$(id -g)" -v $(pwd):/app -w /app node:14 npm run development
+
+cd ../backend
+docker run --rm -u "$(id -u):$(id -g)" -v $(pwd):/var/www/html -w /var/www/html laravelsail/php82-composer:latest composer install --ignore-platform-reqs
