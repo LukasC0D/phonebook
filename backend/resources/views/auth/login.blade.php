@@ -8,7 +8,7 @@
             @csrf
             <input type="email" name="email" placeholder="Email" value="{{ old('email') }}" required class="form-control mb-3 text-center">
             <input type="password" name="password" placeholder="Password" required class="form-control mb-3 text-center">
-            <button class="btn btn-primary m-1" type="submit">Login</button>
+            <button class="btn btn-primary m-1" type="submit">Log In</button>
         </form>
     </div>
 </div>
