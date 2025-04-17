@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-    <div class="container d-flex justify-content-center mt-5">
+    <div class="container d-flex justify-content-center center">
         <div class="bg-dark p-4 rounded" style="width: 300px;">
             <div class="text-center text-light mb-4">
                 <h2>Register</h2>

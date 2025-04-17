@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-<div class="container mt-5 d-flex justify-content-center">
+<div class="container d-flex justify-content-center center">
     <div class="bg-dark p-4 rounded" style="width: 300px;">
         <h2 class="text-light text-center mb-4">Login</h2>
         <form method="POST" action="/login" class="d-flex flex-column align-items-center">
