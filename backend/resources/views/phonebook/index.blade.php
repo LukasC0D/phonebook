@@ -60,7 +60,10 @@
                                             class="d-flex align-items-center">
                                             @csrf
                                             <input type="hidden" name="user_id" value="{{ $user->id }}">
-                                            <button class="btn btn-outline-secondary btn-sm py-0 px-1 mr-1">
+                                            <button class="btn btn-outline-secondary btn-sm py-0 px-1 mr-1"
+                                                    data-toggle="tooltip"
+                                                    data-placement="right"
+                                                    title="Unshare Contact">
                                                 {{ $user->name ?? 'User' . $user->id }} ❌
                                             </button>
                                         </form>
