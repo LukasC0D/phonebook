@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container d-flex justify-content-center mt-5">
-        <h2 class="text-light mb-5">📇 My Contacts</h2>
+        <h2 class="text-light mb-5">My Contacts</h2>
         <div class="ml-3 mt-2">
             <a href="{{ route('phonebook.create') }}" class="btn btn-outline-light px-2 py-0">Add +</a>
         </div>
@@ -78,14 +78,14 @@
         <div class="text-center text-light">
             <p>No contacts found !</p>
             <div class="mt-2">
-                <a href="{{ route('phonebook.create') }}" class="btn text-light">Add Contact</a>
+                <a href="{{ route('phonebook.create') }}" class="btn">Add Contact</a>
             </div>
         </div>
     @endif
 
     @if (count($sharedEntries ?? []) > 0)
         <div class="container mt-5">
-            <h3 class="text-light mb-5 text-center">📤 Contacts Shared With Me</h3>
+            <h3 class="text-light mb-5 text-center">Contacts Shared With Me</h3>
             <table class="table table-bordered table-secondary text-center">
                 <thead>
                     <tr>
