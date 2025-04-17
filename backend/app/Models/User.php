@@ -45,4 +45,14 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function phonebook()
+    {
+        return $this->hasMany(Phonebook::class);
+    }
+
+    public function sharedPhonebook()
+{
+    return $this->belongsToMany(Phonebook::class, 'pivot_entries', 'user_id', 'entry_id');
+}
 }
