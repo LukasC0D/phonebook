@@ -52,7 +52,7 @@ class User extends Authenticatable
     }
 
     public function sharedPhonebook()
-{
-    return $this->belongsToMany(Phonebook::class, 'pivot_entries', 'user_id', 'entry_id');
-}
+    {
+        return $this->belongsToMany(Phonebook::class, 'pivot_entries', 'user_id', 'entry_id');
+    }
 }
