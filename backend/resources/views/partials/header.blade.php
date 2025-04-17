@@ -1,5 +1,9 @@
-<nav class="navbar navbar-expand-lg bg-dark bg-opacity-50">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="{{ auth()->check() ? '/home' : '/login' }}">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             @auth
@@ -34,7 +38,7 @@
                 <li class="nav-item">
                     <form action="{{ route('logout') }}" method="POST" class="d-inline">
                         @csrf
-                        <button type="submit" class="nav-link btn btn-link lgn">
+                        <button type="submit" class="nav-link btn btn-link">
                             <strong>Log Out</strong>
                         </button>
                     </form>
