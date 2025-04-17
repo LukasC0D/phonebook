@@ -1,0 +1,51 @@
+.addBtn {
+    background-color: rgb(72, 100, 102);
+    border-radius: 5px;
+}
+
+.delBtn {
+    background-color: rgba(255, 255, 255, 0.788);
+    border-radius: 5px;
+    color: black;
+}
+
+/* .edBtn {
+    background-color: rgba(255, 255, 255, 0.788);
+    border-radius: 5px;
+} */
+
+.addBtn:hover {
+    background-color: rgb(80, 70, 70);
+}
+
+.bfr {
+    color: darkgray;
+}
+
+.bfr::after {
+    border: 1px solid darkgray;
+    content: '';
+    margin: 5px;
+}
+
+.bfr::before {
+    border: 1px solid darkgray;
+    content: '';
+    margin: 5px;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* .lgn:hover {
+    background-color: rgb(7, 138, 109);
+    border-radius: 10px;
+} */
+
+/* .lgn {
+    color: aliceblue;
+} */
